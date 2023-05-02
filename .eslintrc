@@ -5,20 +5,12 @@
     },
     "import/resolver": {
       "alias": {
-        "map": [
-          ["@/styles", "./src/styles"]
-        ],
+        "map": [["@/styles", "./src/styles"]],
         "extensions": [".js"]
       }
     }
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "import",
-    "jsx-a11y",
-    "prettier"
-  ],
+  "plugins": ["react", "react-hooks", "import", "jsx-a11y", "prettier"],
   "extends": [
     "eslint:recommended",
     "next",
@@ -34,6 +26,7 @@
     "no-constant-condition": ["error", { "checkLoops": false }],
     "no-console": "error",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
-    "no-useless-concat": "error"
+    "no-useless-concat": "error",
+    "object-curly-newline": "off"
   }
 }
