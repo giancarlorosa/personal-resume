@@ -6,12 +6,13 @@ export default function App({ Component, pageProps }) {
 }
 
 App.defaultProps = {
+  Component: null,
   pageProps: null,
 };
 
+// TODO: Check if there is an alternative for these propType.
 App.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-  // TODO: Check if there is an alternative for this propType.
+  Component: PropTypes.elementType,
   // eslint-disable-next-line react/forbid-prop-types
   pageProps: PropTypes.object,
 };
