@@ -2,6 +2,14 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["@/styles", "./src/styles"]
+        ],
+        "extensions": [".js"]
+      }
     }
   },
   "plugins": [
