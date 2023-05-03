@@ -7,7 +7,10 @@ jobs:
       - image: cimg/node:18.15.0-browsers
     steps:
       - checkout
+      - node/install:
+        install-yarn: true
       - run: node --version
+      - run: yarn --version
 workflows:
   ci:
     jobs:
