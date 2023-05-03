@@ -7,7 +7,7 @@ jobs:
       - image: cimg/node:18.16.0-browsers
     steps:
       - checkout
-      - node/install
+      - node/install-yarn
       - run: node --version
       - run: yarn --version
 workflows:
