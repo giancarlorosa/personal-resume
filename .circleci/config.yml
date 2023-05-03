@@ -7,8 +7,8 @@ jobs:
       - image: cimg/node:18.16.0-browsers
     steps:
       - checkout
-      - install-packages:
-        phg-manager: yarn
+      - node/install-packages:
+        pkg-manager: yarn
       - run: node --version
       - run: yarn --version
 workflows:
