@@ -4,7 +4,7 @@ orbs:
 jobs:
   setup:
     docker:
-      - image: 18.15.0-browsers
+      - image: cimg/node:18.15.0-browsers
     steps:
       - checkout
       - run: node --version
