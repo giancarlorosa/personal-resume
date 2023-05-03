@@ -6,7 +6,7 @@ orbs:
 jobs:
   setup:
     docker:
-      -image: cimg/node:18.16.0-browsers
+      -image: cimg/base:stable
     steps:
       - checkout
       - node/install:
@@ -16,4 +16,5 @@ jobs:
 
 workflows:
   ci:
-    - setup
+    jobs:
+      - setup
