@@ -1,7 +1,30 @@
 {
   "name": "personal-resume",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
+  "description": "Personal project where I refactored my personal resume website to practice the implementation of a React project using Next framework.",
+  "keywords": [
+    "resume",
+    "personal resume",
+    "react",
+    "next",
+    "tailwindcss",
+    "storybook",
+    "jest",
+    "unity tests",
+    "test coverage",
+    "CI",
+    "CD"
+  ],
+  "author": {
+    "name": "Giancarlo Pereira da Rosa",
+    "email": "contato@giancarlorosa.com.br",
+    "url": "https://giancarlorosa.com.br/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/giancarlorosa/personal-resume"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
