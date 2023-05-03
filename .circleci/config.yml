@@ -4,11 +4,11 @@ orbs:
 jobs:
   setup:
     docker:
-      - image: cimg/node:18.15.0-browsers
+      - image: cimg/node:18.16.0-browsers
     steps:
       - checkout
-      - node/install:
-        install-yarn: true
+      - install-packages:
+        phg-manager: yarn
       - run: node --version
       - run: yarn --version
 workflows:
