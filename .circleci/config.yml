@@ -17,6 +17,14 @@ jobs:
       - run: yarn test-coverage
       - codecov/upload:
           file: coverage/*.json
+  versioning:
+    docker:
+      - image: cimg/node:18.16.0
+    steps:
+      - checkout
+      - run:
+          name: Check package version
+          command: node scripts/check-version giancarlorosa personal-resume
 workflows:
   ci:
     jobs:
