@@ -1,6 +1,7 @@
 version: 2.1
 orbs:
   node: circleci/node@5.1.0
+  codecov: codecov/codecov@3.2.4
 jobs:
   setup:
     docker:
@@ -14,6 +15,8 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - run: yarn test-coverage
+      - codecov:
+          file: coverage/*.json
 workflows:
   ci:
     jobs:
