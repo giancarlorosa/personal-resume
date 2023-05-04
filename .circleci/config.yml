@@ -3,7 +3,7 @@ orbs:
   node: circleci/node@5.1.0
   codecov: codecov/codecov@3.2.4
 jobs:
-  setup:
+  tests:
     docker:
       - image: cimg/node:18.16.0-browsers
     steps:
@@ -20,4 +20,4 @@ jobs:
 workflows:
   ci:
     jobs:
-      - setup
+      - tests
