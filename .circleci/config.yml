@@ -13,6 +13,7 @@ jobs:
       - node/install-packages:
           pkg-manager: yarn
       - run: yarn lint
+      - run: yarn test-coverage
 workflows:
   ci:
     jobs:
