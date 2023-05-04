@@ -5,12 +5,15 @@
     },
     "import/resolver": {
       "alias": {
-        "map": [["@/styles", "./src/styles"]],
+        "map": [
+          ["@/pages", "./src/pages"],
+          ["@/styles", "./src/styles"]
+        ],
         "extensions": [".js"]
       }
     }
   },
-  "plugins": ["react", "react-hooks", "import", "jsx-a11y", "prettier"],
+  "plugins": ["react", "react-hooks", "import", "jsx-a11y", "prettier", "jest"],
   "extends": [
     "eslint:recommended",
     "next",
@@ -18,6 +21,9 @@
     "prettier",
     "airbnb"
   ],
+  "env": {
+    "jest/globals": true
+  },
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
@@ -27,6 +33,16 @@
     "no-console": "error",
     "no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "no-useless-concat": "error",
-    "object-curly-newline": "off"
+    "object-curly-newline": "off",
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ]
   }
 }
