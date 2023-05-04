@@ -15,7 +15,7 @@ jobs:
           pkg-manager: yarn
       - run: yarn lint
       - run: yarn test-coverage
-      - codecov:
+      - codecov/upload:
           file: coverage/*.json
 workflows:
   ci:
