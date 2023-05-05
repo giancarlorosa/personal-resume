@@ -17,6 +17,7 @@ jobs:
       - run: yarn test-coverage
       - codecov/upload:
           file: coverage/*.json
+      - run: yarn chromatic --project-token=${CHROMATIC_TOKEN}
   versioning:
     docker:
       - image: cimg/node:18.16.0
