@@ -2,6 +2,7 @@
 
 ![CircleCI](https://img.shields.io/circleci/build/github/giancarlorosa/personal-resume)
 ![Codecov](https://img.shields.io/codecov/c/github/giancarlorosa/personal-resume)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-%23FE5196?logo=conventionalcommits&logoColor=white)](https://conventionalcommits.org)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
