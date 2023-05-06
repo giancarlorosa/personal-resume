@@ -1,6 +1,6 @@
 {
   "name": "personal-resume",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "private": true,
   "description": "Personal project where I refactored my personal resume website to practice the implementation of a React project using Next framework.",
   "keywords": [
