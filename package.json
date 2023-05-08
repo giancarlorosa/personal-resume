@@ -1,6 +1,6 @@
 {
   "name": "personal-resume",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "private": true,
   "description": "Personal project where I refactored my personal resume website to practice the implementation of a React project using Next framework.",
   "keywords": [
@@ -10,9 +10,17 @@
     "next",
     "tailwindcss",
     "storybook",
+    "chromatic",
+    "codecov",
+    "conventional commits",
+    "commitizen",
+    "husky",
     "jest",
     "unity tests",
     "test coverage",
+    "circleci",
+    "continuous integration",
+    "continuous delivery",
     "CI",
     "CD"
   ],
