@@ -1,18 +1,18 @@
 import '@/styles/globals.css';
-import PropTypes from 'react';
+import { Poppins } from 'next/font/google';
 
+const poppins = Poppins({
+  variable: '--font-poppins',
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+});
+
+// TODO: Check for App propTypes in the future.
+// eslint-disable-next-line react/prop-types
 export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+  return (
+    <div className={`${poppins.variable} font-poppins`}>
+      <Component {...pageProps} />
+    </div>
+  );
 }
-
-App.defaultProps = {
-  Component: null,
-  pageProps: null,
-};
-
-// TODO: Check if there is an alternative for these propType.
-App.propTypes = {
-  Component: PropTypes.elementType,
-  // eslint-disable-next-line react/forbid-prop-types
-  pageProps: PropTypes.object,
-};
