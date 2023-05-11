@@ -1,4 +1,5 @@
 import Home from '@/pages/index';
+import MainContainer from '@/components/layout/MainContainer/';
 
 export default {
   title: 'Pages/Home Page',
@@ -6,5 +7,9 @@ export default {
 };
 
 export const HomePage = {
-  render: () => <Home />,
+  render: () => (
+    <MainContainer>
+      <Home />
+    </MainContainer>
+  ),
 };
