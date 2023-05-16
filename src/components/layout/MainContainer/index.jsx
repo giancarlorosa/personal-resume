@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 function MainContainer({ children }) {
-  return <div className={`${poppins.variable} font-poppins`}>{children}</div>;
+  return <div className={`${poppins.variable}`}>{children}</div>;
 }
 
 MainContainer.propTypes = {
