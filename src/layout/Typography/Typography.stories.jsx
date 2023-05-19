@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-one-expression-per-line */
-import Typography from '@/components/layout/Typography';
+import Typography from '@/layout/Typography';
 
 export default {
   title: 'Project Info/Typography',
