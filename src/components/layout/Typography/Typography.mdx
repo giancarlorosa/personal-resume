@@ -1,0 +1,35 @@
+import { Meta, Description, Canvas } from '@storybook/blocks';
+import * as TypographyStories from './Typography.stories.jsx';
+
+<Meta of={TypographyStories} />
+
+# Typography
+
+In this documentation, you can find all the base styles used in the project. Some basic tags like **ordered lists** and **unordered lists** will need their own components as they were reset to fit the layot needs. But all basic tags will be listed here to be possible to check their styles and if need of a component creation.
+
+## Styles
+
+These are the basic styles configuration:
+
+- The body font-family for the website is [Poppins](https://fonts.google.com/specimen/Poppins)
+- The base font-size is `16px` and the line-height is `1.75`
+- The project was built using **Tailwindcss**
+- Heading and Lists will have their own components
+
+## Formatting
+
+Here you can check the basic text formatting using semantic HTML.
+
+<Canvas of={TypographyStories.Formatting} />
+
+## Link
+
+Here you can check the basic link behavior (`a` tag) from the website.
+
+<Canvas of={TypographyStories.LinkTo} />
+
+## Paragraph
+
+Here you can check the styles from paragraph. You can check the default spacing, font color and font size.
+
+<Canvas of={TypographyStories.Paragraph} />
