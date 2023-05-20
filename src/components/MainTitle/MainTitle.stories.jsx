@@ -12,15 +12,19 @@ export const Implementation = {
 };
 
 export const OneLineBigTitle = {
-  render: () => (
-    <MainTitle>Very big title text but without any linebreak</MainTitle>
-  ),
+  args: {
+    children: 'Very big title text but without any linebreak',
+  },
+  render: ({ children }) => <MainTitle>{children}</MainTitle>,
 };
 
 export const MultipleLines = {
-  render: () => (
+  args: {
+    children: 'Very big title with multiple lines of text',
+  },
+  render: ({ children }) => (
     <div className="max-w-2xl mx-auto">
-      <MainTitle>Very big title with multiple lines of text</MainTitle>
+      <MainTitle>{children}</MainTitle>
     </div>
   ),
 };
@@ -49,11 +53,13 @@ export const TitleWithParagraph = {
 };
 
 export const MultipleLinesWithParagraph = {
-  render: () => (
+  args: {
+    children:
+      'Very big title with multiple lines of text followed by a paragraph',
+  },
+  render: ({ children }) => (
     <div className="max-w-3xl mx-auto">
-      <MainTitle>
-        Very big title with multiple lines of text followed by a paragraph
-      </MainTitle>
+      <MainTitle>{children}</MainTitle>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
         odit harum minus autem dolore ab, hic magnam, sunt iste ipsam itaque
