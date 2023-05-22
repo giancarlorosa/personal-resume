@@ -1,5 +1,5 @@
 import '@/styles/globals.css';
-import MainContainer from '@/components/layout/MainContainer/';
+import MainContainer from '@/layout/MainContainer/';
 
 // TODO: Check for App propTypes in the future.
 // eslint-disable-next-line react/prop-types

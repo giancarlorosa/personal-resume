@@ -1,5 +1,5 @@
 import Home from '@/pages/index';
-import MainContainer from '@/components/layout/MainContainer/';
+import MainContainer from '@/layout/MainContainer/';
 
 export default {
   title: 'Pages/Home Page',

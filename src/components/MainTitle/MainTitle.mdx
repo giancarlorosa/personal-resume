@@ -1,0 +1,25 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as MainTitleStories from './MainTitle.stories.jsx';
+
+<Meta of={MainTitleStories} />
+
+# Main Title Component
+
+The **Main Title** component was developed to serve the `H1` tag for the pages. Its implementation is very simple and just asks for a **string** as parameter. Instead of using **props**, it was decided that using **children** could be more semantic and readable. As this component will always be te first element of any page, its alignm will be centered and it wil have a small underline element below the tag.
+
+## Implementation
+
+This component has a very simple implementation. Just inform a **string** as children.
+**DO NOT USE NODE INSIDE CHILDREN PROP!**
+
+<Canvas of={MainTitleStories.Implementation} />
+
+<Controls of={MainTitleStories.Implementation} />
+
+## Title followed by a paragraph
+
+This is an implementation example using **Main Title** component followed by a **paragraph**. Here we can check component botton space.
+
+<Canvas of={MainTitleStories.TitleWithParagraph} />
+
+<Controls of={MainTitleStories.TitleWithParagraph} />
