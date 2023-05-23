@@ -1,0 +1,35 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as SectionTitleStories from './SectionTitle.stories.jsx';
+
+<Meta of={SectionTitleStories} />
+
+# Section Title Component
+
+The **Section Title** component was developed to serve the `H2` tag helping to name different sections of the page. Its implementation is very simple and just asks for a **string** as a parameter. Instead of using **props**, it was decided that using **children** could be more semantic and readable. The component receives a parameter called **fullWidth** that makes its underline element **100% width** of its container.
+
+## Implementation
+
+This component has a very simple implementation. Just inform a **string** as children.
+**DO NOT USE NODE INSIDE CHILDREN PROP!**
+
+If you want a **100% width**, just set the **fullWidth** parameter.
+
+<Canvas of={SectionTitleStories.Implementation} />
+
+<Controls of={SectionTitleStories.Implementation} />
+
+## Multiple Lines
+
+Here it's possible to test the multiple lines inside the component to check its line height.
+
+<Canvas of={SectionTitleStories.MultipleLines} />
+
+<Controls of={SectionTitleStories.MultipleLines} />
+
+## Followed by a paragraph
+
+Here it's possible to check the component margin bottom when it's followed by another element. The component container has a limited width to be possible to see multiple lines inside the container.
+
+<Canvas of={SectionTitleStories.WithParagraph} />
+
+<Controls of={SectionTitleStories.WithParagraph} />
