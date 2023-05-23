@@ -30,3 +30,28 @@ export const MultipleLines = {
     </div>
   ),
 };
+
+export const WithParagraph = {
+  args: {
+    children: 'Followed by a paragraph',
+    fullWidth: false,
+  },
+  argTypes: defaultArgTypes,
+  render: ({ children, fullWidth }) => (
+    <div className="max-w-xl">
+      <SectionTitle fullWidth={fullWidth}>{children}</SectionTitle>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta nihil
+        odio adipisci quaerat, dicta autem quisquam consequatur! Doloremque
+        quasi saepe alias illum voluptate autem aspernatur vero. Voluptas
+        asperiores quibusdam officia?
+      </p>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque
+        doloremque eligendi porro est pariatur placeat dolores saepe quidem
+        voluptatem eum provident velit quo illum mollitia nam necessitatibus,
+        ducimus quos cum?
+      </p>
+    </div>
+  ),
+};
