@@ -15,41 +15,36 @@ describe('MainTitle', () => {
     console.error.mockClear();
   });
 
-  it('renders the component', () => {
+  it('should render the component', () => {
     const { getByText } = render(<MainTitle>Main Title</MainTitle>);
     const componentTitle = getByText('Main Title');
     expect(componentTitle).toBeTruthy();
   });
 
-  it('verifies if component has a H1 tag', () => {
+  it('should verify if component has a H1 tag', () => {
     const { getByRole } = render(<MainTitle>Component text</MainTitle>);
     const componentTag = getByRole('heading', { level: 1 });
     expect(componentTag).toBeTruthy();
   });
 
-  it('throws an error when not pass children prop', () => {
-    render(<MainTitle />);
-
+  it.each([
+    {
+      errorLabel: 'not pass children prop',
+      expectText: 'The prop `children` is marked as required in `MainTitle`',
+    },
+    {
+      children: <div>Main Title</div>,
+      errorLabel: 'children prop is not a string',
+      expectText:
+        'Invalid prop `children` of type `object` supplied to `MainTitle`',
+    },
+  ])('should throw an error when $errorLabel', ({ children, expectText }) => {
+    render(<MainTitle>{children}</MainTitle>);
     expect(console.error).toHaveBeenCalled();
-    expect(console.error.mock.calls[0][2]).toContain(
-      'The prop `children` is marked as required in `MainTitle`'
-    );
+    expect(console.error.mock.calls[0][2]).toContain(expectText);
   });
 
-  it('throws an error when children prop is not a string', () => {
-    render(
-      <MainTitle>
-        <div>Main Title</div>
-      </MainTitle>
-    );
-
-    expect(console.error).toHaveBeenCalled();
-    expect(console.error.mock.calls[0][2]).toContain(
-      'Invalid prop `children` of type `object` supplied to `MainTitle`'
-    );
-  });
-
-  it('verifies changes in the component style', () => {
+  it('should verify changes in the component style', () => {
     const { container } = render(<MainTitle>Main Title</MainTitle>);
 
     expect(container.firstChild.className).toMatchSnapshot();
