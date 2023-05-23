@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section Title should verify changes on component styles after setting fullWidth parameter 1`] = `"text-2xl text-dark-jungle-green font-semibold relative mb-7 after:bg-mercury after:block after:content-[""] after:h-0.5 after:mt-1 after:w-14 after:w-full before:bg-deep-sky-blue before:block before:content-[""] before:h-0.5 before:mt-1 before:w-8 before:absolute before:bottom-0"`;
+
+exports[`Section Title should verify changes on component styles on its default state 1`] = `"text-2xl text-dark-jungle-green font-semibold relative mb-7 inline-block after:bg-mercury after:block after:content-[""] after:h-0.5 after:mt-1 after:w-14 after:w-full before:bg-deep-sky-blue before:block before:content-[""] before:h-0.5 before:mt-1 before:w-8 before:absolute before:bottom-0"`;
