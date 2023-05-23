@@ -63,4 +63,19 @@ describe('Section Title', () => {
       expect(console.error.mock.calls[0][2]).toContain(expectText);
     }
   );
+
+  it('should verify changes on component styles on its default state', () => {
+    const { getByText } = render(<SectionTitle>Section Title</SectionTitle>);
+    const componentTitle = getByText('Section Title');
+    expect(componentTitle.className).toMatchSnapshot();
+  });
+
+  it('should verify changes on component styles after setting fullWidth parameter', () => {
+    const { getByText } = render(
+      <SectionTitle fullWidth>Section Title</SectionTitle>
+    );
+
+    const componentTitle = getByText('Section Title');
+    expect(componentTitle.className).toMatchSnapshot();
+  });
 });
