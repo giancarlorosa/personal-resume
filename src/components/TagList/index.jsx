@@ -19,6 +19,7 @@ function Tag({ children }) {
   return <li className={tagClasses}>{children}</li>;
 }
 
+// TODO: find a way to validate compound components.
 TagList.propTypes = { children: PropTypes.node.isRequired };
 Tag.propTypes = { children: PropTypes.string.isRequired };
 
