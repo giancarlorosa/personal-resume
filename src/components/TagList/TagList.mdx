@@ -1,0 +1,22 @@
+import { Meta, Canvas, Controls } from '@storybook/blocks';
+import * as TagListStories from './TagList.stories.jsx';
+
+<Meta of={TagListStories} />
+
+# Tag List Component
+
+The **Tag List** component was developed to list an undetermined number of items inside its container. These internal elements are called **Tags** and receive **children** parameter in a **string** format. The component could be built using a parameter as an array, but to set the component more readable, it was decided to build a compound component. The implementation is very simple, where a **TagList** container is set, and for any new internal item, add a component called **Tag**.
+
+## Implementation
+
+This component has a very simple implementation. Just inform a **Tag** subcomponent as children.
+
+<Canvas of={TagListStories.Implementation} />
+
+<Controls of={TagListStories.Implementation} />
+
+## Multiple Lines
+
+Here it's possible to test the multiple lines inside the component to check its margin.
+
+<Canvas of={TagListStories.MultipleLines} />

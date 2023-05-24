@@ -6,10 +6,12 @@
     "import/resolver": {
       "alias": {
         "map": [
+          ["@/components", "./src/components"],
+          ["@/layout", "./src/layout"],
           ["@/pages", "./src/pages"],
           ["@/styles", "./src/styles"]
         ],
-        "extensions": [".js"]
+        "extensions": [".js", ".jsx"]
       }
     }
   },
